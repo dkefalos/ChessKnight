@@ -15,6 +15,18 @@
 		01AEEE3627DFB9EB008B900C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01AEEE3427DFB9EB008B900C /* LaunchScreen.storyboard */; };
 		01AEEE4127DFB9EB008B900C /* ChessKnightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE4027DFB9EB008B900C /* ChessKnightTests.swift */; };
 		01AEEE4C27DFB9EB008B900C /* ChessKnightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE4B27DFB9EB008B900C /* ChessKnightUITests.swift */; };
+		01AEEE5E27DFD9C1008B900C /* ChessboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE5C27DFD9C1008B900C /* ChessboardViewController.swift */; };
+		01AEEE5F27DFD9C1008B900C /* ChessboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AEEE5D27DFD9C1008B900C /* ChessboardViewController.xib */; };
+		01AEEE6127DFDF86008B900C /* SuperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE6027DFDF86008B900C /* SuperTableViewController.swift */; };
+		01AEEE6327DFDF9D008B900C /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE6227DFDF9D008B900C /* SuperViewController.swift */; };
+		01AEEE6527DFE1BD008B900C /* ChessboardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE6427DFE1BD008B900C /* ChessboardModels.swift */; };
+		01AEEE6F27DFE3F3008B900C /* TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE6E27DFE3F3008B900C /* TableViewDatasource.swift */; };
+		01AEEE7127DFE43B008B900C /* SuperTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE7027DFE43B008B900C /* SuperTableViewCellViewModel.swift */; };
+		01AEEE7327DFE480008B900C /* SuperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE7227DFE480008B900C /* SuperTableViewCell.swift */; };
+		01AEEE7727DFE6ED008B900C /* SingleLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE7527DFE6ED008B900C /* SingleLabelTableViewCell.swift */; };
+		01AEEE7827DFE6ED008B900C /* SingleLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AEEE7627DFE6ED008B900C /* SingleLabelTableViewCell.xib */; };
+		01AEEE7B27DFE7AA008B900C /* SingleLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE7A27DFE7AA008B900C /* SingleLabelViewModel.swift */; };
+		01AEEE7D27DFE7DB008B900C /* CellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE7C27DFE7DB008B900C /* CellIdentifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,18 @@
 		01AEEE4727DFB9EB008B900C /* ChessKnightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessKnightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AEEE4B27DFB9EB008B900C /* ChessKnightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessKnightUITests.swift; sourceTree = "<group>"; };
 		01AEEE4D27DFB9EB008B900C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01AEEE5C27DFD9C1008B900C /* ChessboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardViewController.swift; sourceTree = "<group>"; };
+		01AEEE5D27DFD9C1008B900C /* ChessboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChessboardViewController.xib; sourceTree = "<group>"; };
+		01AEEE6027DFDF86008B900C /* SuperTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTableViewController.swift; sourceTree = "<group>"; };
+		01AEEE6227DFDF9D008B900C /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
+		01AEEE6427DFE1BD008B900C /* ChessboardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardModels.swift; sourceTree = "<group>"; };
+		01AEEE6E27DFE3F3008B900C /* TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDatasource.swift; sourceTree = "<group>"; };
+		01AEEE7027DFE43B008B900C /* SuperTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		01AEEE7227DFE480008B900C /* SuperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTableViewCell.swift; sourceTree = "<group>"; };
+		01AEEE7527DFE6ED008B900C /* SingleLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLabelTableViewCell.swift; sourceTree = "<group>"; };
+		01AEEE7627DFE6ED008B900C /* SingleLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleLabelTableViewCell.xib; sourceTree = "<group>"; };
+		01AEEE7A27DFE7AA008B900C /* SingleLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLabelViewModel.swift; sourceTree = "<group>"; };
+		01AEEE7C27DFE7DB008B900C /* CellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +125,10 @@
 			children = (
 				01AEEE2927DFB9E8008B900C /* AppDelegate.swift */,
 				01AEEE2B27DFB9E8008B900C /* SceneDelegate.swift */,
-				01AEEE2D27DFB9E8008B900C /* LaunchScreenViewController.swift */,
+				01AEEE6A27DFE2D5008B900C /* Helpers */,
+				01AEEE6927DFE282008B900C /* ViewModels */,
+				01AEEE6627DFE25B008B900C /* Views */,
+				01AEEE5927DFD959008B900C /* Screens */,
 				01AEEE2F27DFB9E8008B900C /* Main.storyboard */,
 				01AEEE3227DFB9EB008B900C /* Assets.xcassets */,
 				01AEEE3427DFB9EB008B900C /* LaunchScreen.storyboard */,
@@ -126,6 +153,119 @@
 				01AEEE4D27DFB9EB008B900C /* Info.plist */,
 			);
 			path = ChessKnightUITests;
+			sourceTree = "<group>";
+		};
+		01AEEE5927DFD959008B900C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE6227DFDF9D008B900C /* SuperViewController.swift */,
+				01AEEE6027DFDF86008B900C /* SuperTableViewController.swift */,
+				01AEEE5A27DFD966008B900C /* Launch */,
+				01AEEE5B27DFD987008B900C /* Chessboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		01AEEE5A27DFD966008B900C /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE2D27DFB9E8008B900C /* LaunchScreenViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		01AEEE5B27DFD987008B900C /* Chessboard */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE5C27DFD9C1008B900C /* ChessboardViewController.swift */,
+				01AEEE5D27DFD9C1008B900C /* ChessboardViewController.xib */,
+				01AEEE6427DFE1BD008B900C /* ChessboardModels.swift */,
+			);
+			path = Chessboard;
+			sourceTree = "<group>";
+		};
+		01AEEE6627DFE25B008B900C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE6727DFE264008B900C /* TableViewCells */,
+				01AEEE6827DFE26F008B900C /* CollectionViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		01AEEE6727DFE264008B900C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE7227DFE480008B900C /* SuperTableViewCell.swift */,
+				01AEEE7427DFE6AA008B900C /* CellWithSingleLabel */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		01AEEE6827DFE26F008B900C /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		01AEEE6927DFE282008B900C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE6C27DFE36D008B900C /* TableViewCellViewModels */,
+				01AEEE6D27DFE385008B900C /* CollectionViewCellViewModels */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		01AEEE6A27DFE2D5008B900C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE7C27DFE7DB008B900C /* CellIdentifiers.swift */,
+				01AEEE6E27DFE3F3008B900C /* TableViewDatasource.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		01AEEE6B27DFE348008B900C /* ChessboardViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChessboardViewModel;
+			sourceTree = "<group>";
+		};
+		01AEEE6C27DFE36D008B900C /* TableViewCellViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE7027DFE43B008B900C /* SuperTableViewCellViewModel.swift */,
+				01AEEE7927DFE779008B900C /* SingleLabelViewModel */,
+				01AEEE6B27DFE348008B900C /* ChessboardViewModel */,
+			);
+			path = TableViewCellViewModels;
+			sourceTree = "<group>";
+		};
+		01AEEE6D27DFE385008B900C /* CollectionViewCellViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCellViewModels;
+			sourceTree = "<group>";
+		};
+		01AEEE7427DFE6AA008B900C /* CellWithSingleLabel */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE7527DFE6ED008B900C /* SingleLabelTableViewCell.swift */,
+				01AEEE7627DFE6ED008B900C /* SingleLabelTableViewCell.xib */,
+			);
+			path = CellWithSingleLabel;
+			sourceTree = "<group>";
+		};
+		01AEEE7927DFE779008B900C /* SingleLabelViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01AEEE7A27DFE7AA008B900C /* SingleLabelViewModel.swift */,
+			);
+			path = SingleLabelViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +373,8 @@
 			files = (
 				01AEEE3627DFB9EB008B900C /* LaunchScreen.storyboard in Resources */,
 				01AEEE3327DFB9EB008B900C /* Assets.xcassets in Resources */,
+				01AEEE5F27DFD9C1008B900C /* ChessboardViewController.xib in Resources */,
+				01AEEE7827DFE6ED008B900C /* SingleLabelTableViewCell.xib in Resources */,
 				01AEEE3127DFB9E8008B900C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +400,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01AEEE6127DFDF86008B900C /* SuperTableViewController.swift in Sources */,
 				01AEEE2E27DFB9E8008B900C /* LaunchScreenViewController.swift in Sources */,
+				01AEEE6F27DFE3F3008B900C /* TableViewDatasource.swift in Sources */,
 				01AEEE2A27DFB9E8008B900C /* AppDelegate.swift in Sources */,
+				01AEEE5E27DFD9C1008B900C /* ChessboardViewController.swift in Sources */,
+				01AEEE6327DFDF9D008B900C /* SuperViewController.swift in Sources */,
+				01AEEE6527DFE1BD008B900C /* ChessboardModels.swift in Sources */,
+				01AEEE7B27DFE7AA008B900C /* SingleLabelViewModel.swift in Sources */,
+				01AEEE7327DFE480008B900C /* SuperTableViewCell.swift in Sources */,
+				01AEEE7D27DFE7DB008B900C /* CellIdentifiers.swift in Sources */,
+				01AEEE7127DFE43B008B900C /* SuperTableViewCellViewModel.swift in Sources */,
+				01AEEE7727DFE6ED008B900C /* SingleLabelTableViewCell.swift in Sources */,
 				01AEEE2C27DFB9E8008B900C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
