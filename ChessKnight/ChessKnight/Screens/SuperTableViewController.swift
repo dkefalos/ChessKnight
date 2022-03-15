@@ -19,6 +19,8 @@ class SuperTableViewController: SuperViewController {
     func registerCells() {
         self.tableView.register(UINib.init(nibName: NibNames.singleLabel.rawValue, bundle: nil),
                                 forCellReuseIdentifier: CellIdentifiers.singleLabel.rawValue)
+        self.tableView.register(UINib.init(nibName: NibNames.chessboad.rawValue, bundle: nil),
+                                forCellReuseIdentifier: CellIdentifiers.chessboard.rawValue)
     }
     
     func updateWithViewModel(_ viewModel: TableViewDatasource?) {

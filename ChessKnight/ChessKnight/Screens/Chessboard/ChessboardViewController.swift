@@ -27,7 +27,7 @@ class ChessboardViewController: SuperTableViewController {
     }
     
     func presentData() {
-        self.tableViewModel = ChessboardModels.ViewModel.init(dataModel: nil)
+        self.tableViewModel = ChessboardModels.ViewModel.init(dataModel: self.dataModel)
         self.updateWithViewModel(self.tableViewModel)
     }
 }

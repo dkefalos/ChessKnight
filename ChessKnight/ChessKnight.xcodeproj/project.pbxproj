@@ -27,6 +27,16 @@
 		01AEEE7827DFE6ED008B900C /* SingleLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AEEE7627DFE6ED008B900C /* SingleLabelTableViewCell.xib */; };
 		01AEEE7B27DFE7AA008B900C /* SingleLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE7A27DFE7AA008B900C /* SingleLabelViewModel.swift */; };
 		01AEEE7D27DFE7DB008B900C /* CellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE7C27DFE7DB008B900C /* CellIdentifiers.swift */; };
+		01B0F31527E108E5005212B0 /* ChessboardTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0F31427E108E5005212B0 /* ChessboardTableViewCellViewModel.swift */; };
+		01B0F31927E10959005212B0 /* ChessboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0F31727E10959005212B0 /* ChessboardTableViewCell.swift */; };
+		01B0F31A27E10959005212B0 /* ChessboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B0F31827E10959005212B0 /* ChessboardTableViewCell.xib */; };
+		01B0F31D27E10BEA005212B0 /* ChessboardPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0F31C27E10BEA005212B0 /* ChessboardPosition.swift */; };
+		01B0F31F27E1116E005212B0 /* ChessboardCollectionViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0F31E27E1116E005212B0 /* ChessboardCollectionViewDatasource.swift */; };
+		01B0F32127E113E2005212B0 /* SuperCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0F32027E113E2005212B0 /* SuperCollectionViewCellViewModel.swift */; };
+		01B0F32427E11433005212B0 /* ChessboardCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0F32327E11433005212B0 /* ChessboardCollectionViewCellViewModel.swift */; };
+		01B0F32627E11514005212B0 /* SuperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0F32527E11514005212B0 /* SuperCollectionViewCell.swift */; };
+		01B0F32A27E1153F005212B0 /* ChessboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0F32827E1153F005212B0 /* ChessboardCollectionViewCell.swift */; };
+		01B0F32B27E1153F005212B0 /* ChessboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B0F32927E1153F005212B0 /* ChessboardCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +83,16 @@
 		01AEEE7627DFE6ED008B900C /* SingleLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleLabelTableViewCell.xib; sourceTree = "<group>"; };
 		01AEEE7A27DFE7AA008B900C /* SingleLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLabelViewModel.swift; sourceTree = "<group>"; };
 		01AEEE7C27DFE7DB008B900C /* CellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
+		01B0F31427E108E5005212B0 /* ChessboardTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		01B0F31727E10959005212B0 /* ChessboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardTableViewCell.swift; sourceTree = "<group>"; };
+		01B0F31827E10959005212B0 /* ChessboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChessboardTableViewCell.xib; sourceTree = "<group>"; };
+		01B0F31C27E10BEA005212B0 /* ChessboardPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardPosition.swift; sourceTree = "<group>"; };
+		01B0F31E27E1116E005212B0 /* ChessboardCollectionViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardCollectionViewDatasource.swift; sourceTree = "<group>"; };
+		01B0F32027E113E2005212B0 /* SuperCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		01B0F32327E11433005212B0 /* ChessboardCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		01B0F32527E11514005212B0 /* SuperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCollectionViewCell.swift; sourceTree = "<group>"; };
+		01B0F32827E1153F005212B0 /* ChessboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		01B0F32927E1153F005212B0 /* ChessboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChessboardCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +145,7 @@
 			children = (
 				01AEEE2927DFB9E8008B900C /* AppDelegate.swift */,
 				01AEEE2B27DFB9E8008B900C /* SceneDelegate.swift */,
+				01B0F31B27E10B2F005212B0 /* DomainModels */,
 				01AEEE6A27DFE2D5008B900C /* Helpers */,
 				01AEEE6927DFE282008B900C /* ViewModels */,
 				01AEEE6627DFE25B008B900C /* Views */,
@@ -198,6 +219,7 @@
 			children = (
 				01AEEE7227DFE480008B900C /* SuperTableViewCell.swift */,
 				01AEEE7427DFE6AA008B900C /* CellWithSingleLabel */,
+				01B0F31627E1090F005212B0 /* ChessboardTableViewCell */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -205,6 +227,8 @@
 		01AEEE6827DFE26F008B900C /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				01B0F32527E11514005212B0 /* SuperCollectionViewCell.swift */,
+				01B0F32727E11519005212B0 /* ChessboardCollectionViewCell */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -230,6 +254,8 @@
 		01AEEE6B27DFE348008B900C /* ChessboardViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				01B0F31427E108E5005212B0 /* ChessboardTableViewCellViewModel.swift */,
+				01B0F31E27E1116E005212B0 /* ChessboardCollectionViewDatasource.swift */,
 			);
 			path = ChessboardViewModel;
 			sourceTree = "<group>";
@@ -247,6 +273,8 @@
 		01AEEE6D27DFE385008B900C /* CollectionViewCellViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				01B0F32027E113E2005212B0 /* SuperCollectionViewCellViewModel.swift */,
+				01B0F32227E113E6005212B0 /* ChessboardCollectionViewCellViewModel */,
 			);
 			path = CollectionViewCellViewModels;
 			sourceTree = "<group>";
@@ -266,6 +294,40 @@
 				01AEEE7A27DFE7AA008B900C /* SingleLabelViewModel.swift */,
 			);
 			path = SingleLabelViewModel;
+			sourceTree = "<group>";
+		};
+		01B0F31627E1090F005212B0 /* ChessboardTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				01B0F31727E10959005212B0 /* ChessboardTableViewCell.swift */,
+				01B0F31827E10959005212B0 /* ChessboardTableViewCell.xib */,
+			);
+			path = ChessboardTableViewCell;
+			sourceTree = "<group>";
+		};
+		01B0F31B27E10B2F005212B0 /* DomainModels */ = {
+			isa = PBXGroup;
+			children = (
+				01B0F31C27E10BEA005212B0 /* ChessboardPosition.swift */,
+			);
+			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		01B0F32227E113E6005212B0 /* ChessboardCollectionViewCellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01B0F32327E11433005212B0 /* ChessboardCollectionViewCellViewModel.swift */,
+			);
+			path = ChessboardCollectionViewCellViewModel;
+			sourceTree = "<group>";
+		};
+		01B0F32727E11519005212B0 /* ChessboardCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				01B0F32827E1153F005212B0 /* ChessboardCollectionViewCell.swift */,
+				01B0F32927E1153F005212B0 /* ChessboardCollectionViewCell.xib */,
+			);
+			path = ChessboardCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +434,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				01AEEE3627DFB9EB008B900C /* LaunchScreen.storyboard in Resources */,
+				01B0F32B27E1153F005212B0 /* ChessboardCollectionViewCell.xib in Resources */,
+				01B0F31A27E10959005212B0 /* ChessboardTableViewCell.xib in Resources */,
 				01AEEE3327DFB9EB008B900C /* Assets.xcassets in Resources */,
 				01AEEE5F27DFD9C1008B900C /* ChessboardViewController.xib in Resources */,
 				01AEEE7827DFE6ED008B900C /* SingleLabelTableViewCell.xib in Resources */,
@@ -402,8 +466,16 @@
 			files = (
 				01AEEE6127DFDF86008B900C /* SuperTableViewController.swift in Sources */,
 				01AEEE2E27DFB9E8008B900C /* LaunchScreenViewController.swift in Sources */,
+				01B0F32627E11514005212B0 /* SuperCollectionViewCell.swift in Sources */,
 				01AEEE6F27DFE3F3008B900C /* TableViewDatasource.swift in Sources */,
+				01B0F32427E11433005212B0 /* ChessboardCollectionViewCellViewModel.swift in Sources */,
 				01AEEE2A27DFB9E8008B900C /* AppDelegate.swift in Sources */,
+				01B0F31F27E1116E005212B0 /* ChessboardCollectionViewDatasource.swift in Sources */,
+				01B0F32A27E1153F005212B0 /* ChessboardCollectionViewCell.swift in Sources */,
+				01B0F32127E113E2005212B0 /* SuperCollectionViewCellViewModel.swift in Sources */,
+				01B0F31927E10959005212B0 /* ChessboardTableViewCell.swift in Sources */,
+				01B0F31527E108E5005212B0 /* ChessboardTableViewCellViewModel.swift in Sources */,
+				01B0F31D27E10BEA005212B0 /* ChessboardPosition.swift in Sources */,
 				01AEEE5E27DFD9C1008B900C /* ChessboardViewController.swift in Sources */,
 				01AEEE6327DFDF9D008B900C /* SuperViewController.swift in Sources */,
 				01AEEE6527DFE1BD008B900C /* ChessboardModels.swift in Sources */,

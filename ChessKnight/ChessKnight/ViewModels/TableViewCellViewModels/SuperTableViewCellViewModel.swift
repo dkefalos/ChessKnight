@@ -9,7 +9,7 @@ import UIKit
 
 class SuperTableViewCellViewModel {
     
-    func updateCell(cell : SuperTableViewCell) {
+    func updateCell(cell: SuperTableViewCell) {
         // Must be overriden
     }
     

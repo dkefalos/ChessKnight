@@ -12,9 +12,11 @@ enum ChessboardModels {
     class DataModel {
         
         var boardSize: Int
+        var chessboardDependencies: ChessboardDependencies
         
         init(boardSize: Int) {
             self.boardSize = boardSize
+            self.chessboardDependencies = ChessboardDependencies.init(size: self.boardSize)
         }
     }
     
@@ -28,6 +30,11 @@ enum ChessboardModels {
         func constructCells(dataModel: DataModel?) {
             let labelCell = SingleLabelViewModel.init(title: "Please select a starting and an ending position for your knight")
             self.cells.append(labelCell)
+            
+            if let boardDeps = dataModel?.chessboardDependencies {
+                let chessboardCell = ChessboardTableViewCellViewModel.init(chessboardDeps: boardDeps)
+                self.cells.append(chessboardCell)
+            }
         }
     }
 }
