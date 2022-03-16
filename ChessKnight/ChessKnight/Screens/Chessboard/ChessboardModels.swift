@@ -22,17 +22,17 @@ enum ChessboardModels {
     
     class ViewModel: TableViewDatasource {
         
-        init(dataModel: DataModel?) {
+        init(dataModel: DataModel?, delegate: ChessboardCellSelectedDelegate?) {
             super.init()
-            self.constructCells(dataModel: dataModel)
+            self.constructCells(dataModel: dataModel, delegate: delegate)
         }
         
-        func constructCells(dataModel: DataModel?) {
+        func constructCells(dataModel: DataModel?, delegate: ChessboardCellSelectedDelegate?) {
             let labelCell = SingleLabelViewModel.init(title: "Please select a starting and an ending position for your knight")
             self.cells.append(labelCell)
             
             if let boardDeps = dataModel?.chessboardDependencies {
-                let chessboardCell = ChessboardTableViewCellViewModel.init(chessboardDeps: boardDeps)
+                let chessboardCell = ChessboardTableViewCellViewModel.init(chessboardDeps: boardDeps, delegate: delegate)
                 self.cells.append(chessboardCell)
             }
         }

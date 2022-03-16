@@ -24,10 +24,12 @@ class ChessboardTableViewCellViewModel: SuperTableViewCellViewModel {
     var size: Int
     var dependencies: ChessboardDependencies
     var datasource: ChessboardCollectionViewDatasource?
+    var chessboardCellselectedDelegate: ChessboardCellSelectedDelegate?
     
-    init(chessboardDeps: ChessboardDependencies) {
+    init(chessboardDeps: ChessboardDependencies, delegate: ChessboardCellSelectedDelegate?) {
         self.size = chessboardDeps.size
         self.dependencies = chessboardDeps
+        self.chessboardCellselectedDelegate = delegate
     }
     
     override func updateCell(cell : SuperTableViewCell) {
@@ -35,7 +37,8 @@ class ChessboardTableViewCellViewModel: SuperTableViewCellViewModel {
             return
         }
         
-        self.datasource = ChessboardCollectionViewDatasource.init(chessboardDeps: self.dependencies)
+        self.datasource = ChessboardCollectionViewDatasource.init(chessboardDeps: self.dependencies,
+                                                                  delegate: self.chessboardCellselectedDelegate)
         castedCell.chessboardCollectionView.dataSource = self.datasource
         castedCell.chessboardCollectionView.delegate = self.datasource
         castedCell.chessboardCollectionView.reloadData()

@@ -14,9 +14,11 @@ class ChessboardCollectionViewDatasource: NSObject,
     
     var boardSize: Int
     var cells: [SuperCollectionViewCellViewModel] = []
+    var chessboardCellSelectedDelegate: ChessboardCellSelectedDelegate?
     
-    init(chessboardDeps: ChessboardDependencies) {
+    init(chessboardDeps: ChessboardDependencies, delegate: ChessboardCellSelectedDelegate?) {
         self.boardSize = chessboardDeps.size
+        self.chessboardCellSelectedDelegate = delegate
         
         for i in 1...boardSize {
             for j in 1...boardSize {
@@ -66,5 +68,16 @@ class ChessboardCollectionViewDatasource: NSObject,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if self.cells.count >= indexPath.row {
+            let cellViewModel = cells[indexPath.row]
+            
+            if let chessboardCellViewModel = cellViewModel as? ChessboardCollectionViewCellViewModel {
+                let selectedPosition = chessboardCellViewModel.chessboardPosition
+                self.chessboardCellSelectedDelegate?.selectedCellAt(selectedPosition)
+            }
+        }
     }
 }

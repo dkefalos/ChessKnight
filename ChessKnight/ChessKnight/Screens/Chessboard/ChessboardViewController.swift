@@ -7,7 +7,11 @@
 
 import UIKit
 
-class ChessboardViewController: SuperTableViewController {
+protocol ChessboardCellSelectedDelegate {
+    func selectedCellAt(_ position: ChessboardPosition)
+}
+
+class ChessboardViewController: SuperTableViewController, ChessboardCellSelectedDelegate {
     
     var dataModel: ChessboardModels.DataModel?
     var tableViewModel: ChessboardModels.ViewModel?
@@ -27,7 +31,11 @@ class ChessboardViewController: SuperTableViewController {
     }
     
     func presentData() {
-        self.tableViewModel = ChessboardModels.ViewModel.init(dataModel: self.dataModel)
+        self.tableViewModel = ChessboardModels.ViewModel.init(dataModel: self.dataModel, delegate: self)
         self.updateWithViewModel(self.tableViewModel)
+    }
+    
+    func selectedCellAt(_ position: ChessboardPosition) {
+        debugPrint("Selected Cell at Position x: \(position.x), y: \(position.y)")
     }
 }
