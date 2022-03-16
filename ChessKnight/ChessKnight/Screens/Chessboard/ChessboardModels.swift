@@ -27,6 +27,14 @@ enum ChessboardModels {
             self.chessboardDependencies.endPosition = position
             self.chessboardDependencies.paths = PathFinder.findPathsFor(chessboardDeps: self.chessboardDependencies)
         }
+        
+        func doesNotContainStartPosition() -> Bool {
+            return self.chessboardDependencies.startPosition == nil
+        }
+        
+        func doesNotContainEndPosition() -> Bool {
+            return self.chessboardDependencies.endPosition == nil
+        }
     }
     
     class ViewModel: TableViewDatasource {
