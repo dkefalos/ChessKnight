@@ -37,5 +37,7 @@ class ChessboardViewController: SuperTableViewController, ChessboardCellSelected
     
     func selectedCellAt(_ position: ChessboardPosition) {
         debugPrint("Selected Cell at Position x: \(position.x), y: \(position.y)")
+        self.dataModel?.updateWithStartPosition(position)
+        self.presentData()
     }
 }

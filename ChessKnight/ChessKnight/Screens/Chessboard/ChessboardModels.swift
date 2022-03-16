@@ -18,6 +18,11 @@ enum ChessboardModels {
             self.boardSize = boardSize
             self.chessboardDependencies = ChessboardDependencies.init(size: self.boardSize)
         }
+        
+        func updateWithStartPosition(_ position: ChessboardPosition) {
+            self.chessboardDependencies = ChessboardDependencies.init(size: self.boardSize,
+                                                                      startPosition: position)
+        }
     }
     
     class ViewModel: TableViewDatasource {

@@ -10,9 +10,11 @@ import UIKit
 class ChessboardCollectionViewCellViewModel: SuperCollectionViewCellViewModel {
     
     var chessboardPosition: ChessboardPosition
+    var isStartPosition: Bool
     
-    init(position: ChessboardPosition) {
+    init(position: ChessboardPosition, isStartPosition: Bool) {
         self.chessboardPosition = position
+        self.isStartPosition = isStartPosition
     }
 
     override func updateCell(cell: SuperCollectionViewCell) {
@@ -20,21 +22,29 @@ class ChessboardCollectionViewCellViewModel: SuperCollectionViewCellViewModel {
             return
         }
         
-        switch chessboardPosition.x % 2 {
+        switch self.chessboardPosition.x % 2 {
         case 0:
-            switch chessboardPosition.y % 2 {
+            switch self.chessboardPosition.y % 2 {
             case 0:
                 castedCell.cellBackgroundView.backgroundColor = UIColor.white
             default:
                 castedCell.cellBackgroundView.backgroundColor = UIColor.black
             }
         default:
-            switch chessboardPosition.y % 2 {
+            switch self.chessboardPosition.y % 2 {
             case 0:
                 castedCell.cellBackgroundView.backgroundColor = UIColor.black
             default:
                 castedCell.cellBackgroundView.backgroundColor = UIColor.white
             }
+        }
+        
+        switch self.isStartPosition {
+        case true:
+            castedCell.cellForegroundView.backgroundColor = UIColor.green.withAlphaComponent(0.4)
+            castedCell.cellForegroundView.layer.cornerRadius = 25
+        default:
+            castedCell.cellForegroundView.backgroundColor = UIColor.clear
         }
     }
     

@@ -19,7 +19,11 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nST-MI-69g">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5L-Ty-O0a">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </subviews>
             </view>
@@ -27,18 +31,23 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="nST-MI-69g" secondAttribute="trailing" id="6dn-MP-Htb"/>
                 <constraint firstAttribute="bottom" secondItem="nST-MI-69g" secondAttribute="bottom" id="9Mi-qg-ClU"/>
+                <constraint firstItem="H5L-Ty-O0a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aEx-ps-xxu"/>
                 <constraint firstItem="nST-MI-69g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ebW-oy-Naz"/>
+                <constraint firstItem="H5L-Ty-O0a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nnt-V0-E05"/>
+                <constraint firstAttribute="trailing" secondItem="H5L-Ty-O0a" secondAttribute="trailing" id="uvL-bh-ODj"/>
                 <constraint firstItem="nST-MI-69g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wsS-z3-e1j"/>
+                <constraint firstAttribute="bottom" secondItem="H5L-Ty-O0a" secondAttribute="bottom" id="yFD-hg-9el"/>
             </constraints>
             <connections>
                 <outlet property="cellBackgroundView" destination="nST-MI-69g" id="aau-Zw-jkf"/>
+                <outlet property="cellForegroundView" destination="H5L-Ty-O0a" id="x7y-TE-smN"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

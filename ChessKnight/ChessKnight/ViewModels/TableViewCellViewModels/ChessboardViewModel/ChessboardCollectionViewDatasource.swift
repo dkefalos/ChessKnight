@@ -18,12 +18,26 @@ class ChessboardCollectionViewDatasource: NSObject,
     
     init(chessboardDeps: ChessboardDependencies, delegate: ChessboardCellSelectedDelegate?) {
         self.boardSize = chessboardDeps.size
+        super.init()
         self.chessboardCellSelectedDelegate = delegate
         
-        for i in 1...boardSize {
-            for j in 1...boardSize {
+        self.createCells(chessboardDeps: chessboardDeps)
+    }
+    
+    func createCells(chessboardDeps: ChessboardDependencies) {
+        
+        for i in 1...chessboardDeps.size {
+            for j in 1...chessboardDeps.size {
                 let position = ChessboardPosition.init(x: i, y: j)
-                self.cells.append(ChessboardCollectionViewCellViewModel.init(position: position))
+                
+                var isStartPosition = false
+                if let startPos = chessboardDeps.startPosition {
+                    if startPos == position {
+                        isStartPosition = true
+                    }
+                }
+                let newCell = ChessboardCollectionViewCellViewModel.init(position: position, isStartPosition: isStartPosition)
+                self.cells.append(newCell)
             }
         }
     }

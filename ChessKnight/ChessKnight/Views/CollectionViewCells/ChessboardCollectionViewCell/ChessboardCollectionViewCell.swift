@@ -10,6 +10,7 @@ import UIKit
 class ChessboardCollectionViewCell: SuperCollectionViewCell {
 
     @IBOutlet weak var cellBackgroundView: UIView!
+    @IBOutlet weak var cellForegroundView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
