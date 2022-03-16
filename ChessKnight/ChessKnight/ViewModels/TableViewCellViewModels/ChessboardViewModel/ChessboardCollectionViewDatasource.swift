@@ -30,27 +30,9 @@ class ChessboardCollectionViewDatasource: NSObject,
             for j in 1...chessboardDeps.size {
                 let position = ChessboardPosition.init(x: i, y: j)
                 
-                var isStartPosition = false
-                if let startPos = chessboardDeps.startPosition {
-                    if startPos == position {
-                        isStartPosition = true
-                    }
-                }
-                
-                var isEndPosition = false
-                if let endPos = chessboardDeps.endPosition {
-                    if endPos == position {
-                        isEndPosition = true
-                    }
-                }
-                
-                var isPath = false
-                for thisPath in chessboardDeps.paths {
-                    if thisPath.containsPosition(position) {
-                        isPath = true
-                        break
-                    }
-                }
+                let isStartPosition = self.isStartPosition(position: position, chessboardDeps: chessboardDeps)
+                let isEndPosition = self.isEndPosition(position: position, chessboardDeps: chessboardDeps)
+                let isPath = self.isPath(position: position, chessboardDeps: chessboardDeps)
                 
                 let newCell = ChessboardCollectionViewCellViewModel.init(position: position,
                                                                          isStartPosition: isStartPosition,
@@ -59,6 +41,35 @@ class ChessboardCollectionViewDatasource: NSObject,
                 self.cells.append(newCell)
             }
         }
+    }
+    
+    func isStartPosition(position: ChessboardPosition, chessboardDeps: ChessboardDependencies) -> Bool {
+        if let startPos = chessboardDeps.startPosition {
+            if startPos == position {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    func isEndPosition(position: ChessboardPosition, chessboardDeps: ChessboardDependencies) -> Bool {
+        if let endPos = chessboardDeps.endPosition {
+            if endPos == position {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    func isPath(position: ChessboardPosition, chessboardDeps: ChessboardDependencies) -> Bool {
+        for thisPath in chessboardDeps.paths {
+            if thisPath.containsPosition(position) {
+                return true
+            }
+        }
+        return false
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
