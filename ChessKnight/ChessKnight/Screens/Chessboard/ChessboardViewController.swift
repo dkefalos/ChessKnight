@@ -11,7 +11,11 @@ protocol ChessboardCellSelectedDelegate {
     func selectedCellAt(_ position: ChessboardPosition)
 }
 
-class ChessboardViewController: SuperTableViewController, ChessboardCellSelectedDelegate {
+protocol TableViewCellButtonPressedDelegate {
+    func cellButtonPressed(id: String?)
+}
+
+class ChessboardViewController: SuperTableViewController, ChessboardCellSelectedDelegate, TableViewCellButtonPressedDelegate {
     
     var dataModel: ChessboardModels.DataModel?
     var tableViewModel: ChessboardModels.ViewModel?
@@ -31,7 +35,9 @@ class ChessboardViewController: SuperTableViewController, ChessboardCellSelected
     }
     
     func presentData() {
-        self.tableViewModel = ChessboardModels.ViewModel.init(dataModel: self.dataModel, delegate: self)
+        self.tableViewModel = ChessboardModels.ViewModel.init(dataModel: self.dataModel,
+                                                              chessboardDelegate: self,
+                                                              cellButtonDelegate: self)
         self.updateWithViewModel(self.tableViewModel)
     }
     
@@ -49,5 +55,10 @@ class ChessboardViewController: SuperTableViewController, ChessboardCellSelected
             self.dataModel?.updateWithEndPosition(position)
             self.presentData()
         }
+    }
+    
+    func cellButtonPressed(id: String?) {
+        self.dataModel?.clearResetableData()
+        self.presentData()
     }
 }

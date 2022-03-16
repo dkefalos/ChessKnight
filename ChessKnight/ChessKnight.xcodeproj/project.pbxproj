@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		012AFADB27E26FF5000B5434 /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AFADA27E26FF5000B5434 /* PathFinder.swift */; };
 		012AFADD27E27049000B5434 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AFADC27E27049000B5434 /* Path.swift */; };
+		012AFAE027E285AD000B5434 /* ResetButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AFADF27E285AD000B5434 /* ResetButtonViewModel.swift */; };
+		012AFAE427E28619000B5434 /* CellWithButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AFAE227E28619000B5434 /* CellWithButtonTableViewCell.swift */; };
+		012AFAE527E28619000B5434 /* CellWithButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012AFAE327E28619000B5434 /* CellWithButtonTableViewCell.xib */; };
 		01AEEE2A27DFB9E8008B900C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2927DFB9E8008B900C /* AppDelegate.swift */; };
 		01AEEE2C27DFB9E8008B900C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2B27DFB9E8008B900C /* SceneDelegate.swift */; };
 		01AEEE2E27DFB9E8008B900C /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2D27DFB9E8008B900C /* LaunchScreenViewController.swift */; };
@@ -61,6 +64,9 @@
 /* Begin PBXFileReference section */
 		012AFADA27E26FF5000B5434 /* PathFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFinder.swift; sourceTree = "<group>"; };
 		012AFADC27E27049000B5434 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		012AFADF27E285AD000B5434 /* ResetButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetButtonViewModel.swift; sourceTree = "<group>"; };
+		012AFAE227E28619000B5434 /* CellWithButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithButtonTableViewCell.swift; sourceTree = "<group>"; };
+		012AFAE327E28619000B5434 /* CellWithButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellWithButtonTableViewCell.xib; sourceTree = "<group>"; };
 		01AEEE2627DFB9E8008B900C /* ChessKnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessKnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AEEE2927DFB9E8008B900C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01AEEE2B27DFB9E8008B900C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +130,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012AFADE27E2857A000B5434 /* ResetButtonViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				012AFADF27E285AD000B5434 /* ResetButtonViewModel.swift */,
+			);
+			path = ResetButtonViewModel;
+			sourceTree = "<group>";
+		};
+		012AFAE127E285F0000B5434 /* CellWithButton */ = {
+			isa = PBXGroup;
+			children = (
+				012AFAE227E28619000B5434 /* CellWithButtonTableViewCell.swift */,
+				012AFAE327E28619000B5434 /* CellWithButtonTableViewCell.xib */,
+			);
+			path = CellWithButton;
+			sourceTree = "<group>";
+		};
 		01AEEE1D27DFB9E8008B900C = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +247,7 @@
 				01AEEE7227DFE480008B900C /* SuperTableViewCell.swift */,
 				01AEEE7427DFE6AA008B900C /* CellWithSingleLabel */,
 				01B0F31627E1090F005212B0 /* ChessboardTableViewCell */,
+				012AFAE127E285F0000B5434 /* CellWithButton */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -271,6 +295,7 @@
 				01AEEE7027DFE43B008B900C /* SuperTableViewCellViewModel.swift */,
 				01AEEE7927DFE779008B900C /* SingleLabelViewModel */,
 				01AEEE6B27DFE348008B900C /* ChessboardViewModel */,
+				012AFADE27E2857A000B5434 /* ResetButtonViewModel */,
 			);
 			path = TableViewCellViewModels;
 			sourceTree = "<group>";
@@ -442,6 +467,7 @@
 				01AEEE3627DFB9EB008B900C /* LaunchScreen.storyboard in Resources */,
 				01B0F32B27E1153F005212B0 /* ChessboardCollectionViewCell.xib in Resources */,
 				01B0F31A27E10959005212B0 /* ChessboardTableViewCell.xib in Resources */,
+				012AFAE527E28619000B5434 /* CellWithButtonTableViewCell.xib in Resources */,
 				01AEEE3327DFB9EB008B900C /* Assets.xcassets in Resources */,
 				01AEEE5F27DFD9C1008B900C /* ChessboardViewController.xib in Resources */,
 				01AEEE7827DFE6ED008B900C /* SingleLabelTableViewCell.xib in Resources */,
@@ -470,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012AFAE027E285AD000B5434 /* ResetButtonViewModel.swift in Sources */,
 				01AEEE6127DFDF86008B900C /* SuperTableViewController.swift in Sources */,
 				012AFADD27E27049000B5434 /* Path.swift in Sources */,
 				01AEEE2E27DFB9E8008B900C /* LaunchScreenViewController.swift in Sources */,
@@ -482,6 +509,7 @@
 				01B0F32A27E1153F005212B0 /* ChessboardCollectionViewCell.swift in Sources */,
 				01B0F32127E113E2005212B0 /* SuperCollectionViewCellViewModel.swift in Sources */,
 				01B0F31927E10959005212B0 /* ChessboardTableViewCell.swift in Sources */,
+				012AFAE427E28619000B5434 /* CellWithButtonTableViewCell.swift in Sources */,
 				01B0F31527E108E5005212B0 /* ChessboardTableViewCellViewModel.swift in Sources */,
 				01B0F31D27E10BEA005212B0 /* ChessboardPosition.swift in Sources */,
 				01AEEE5E27DFD9C1008B900C /* ChessboardViewController.swift in Sources */,
