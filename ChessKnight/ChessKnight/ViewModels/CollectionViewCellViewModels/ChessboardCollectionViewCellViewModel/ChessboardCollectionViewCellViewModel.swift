@@ -46,14 +46,20 @@ class ChessboardCollectionViewCellViewModel: SuperCollectionViewCellViewModel {
         switch self.isStartPosition {
         case true:
             castedCell.cellForegroundView.backgroundColor = UIColor.red.withAlphaComponent(0.9)
-            castedCell.cellForegroundView.layer.cornerRadius = 25
+            castedCell.cellForegroundView.layer.cornerRadius = castedCell.cellForegroundView.frame.size.height/2
         default:
             switch self.isEndPosition {
             case true:
                 castedCell.cellForegroundView.backgroundColor = UIColor.yellow.withAlphaComponent(0.9)
-                castedCell.cellForegroundView.layer.cornerRadius = 25
+                castedCell.cellForegroundView.layer.cornerRadius = castedCell.cellForegroundView.frame.size.height/2
             default:
-                castedCell.cellForegroundView.backgroundColor = UIColor.clear
+                switch self.isPath {
+                case true:
+                    castedCell.cellForegroundView.backgroundColor = UIColor.cyan.withAlphaComponent(0.9)
+                    castedCell.cellForegroundView.layer.cornerRadius = castedCell.cellForegroundView.frame.size.height/2
+                default:
+                    castedCell.cellForegroundView.backgroundColor = UIColor.clear
+                }
             }
         }
     }

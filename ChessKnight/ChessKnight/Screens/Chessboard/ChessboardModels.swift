@@ -25,6 +25,7 @@ enum ChessboardModels {
         
         func updateWithEndPosition(_ position: ChessboardPosition) {
             self.chessboardDependencies.endPosition = position
+            self.chessboardDependencies.paths = PathFinder.findPathsFor(chessboardDeps: self.chessboardDependencies)
         }
     }
     

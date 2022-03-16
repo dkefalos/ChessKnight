@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012AFADB27E26FF5000B5434 /* PathFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AFADA27E26FF5000B5434 /* PathFinder.swift */; };
+		012AFADD27E27049000B5434 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AFADC27E27049000B5434 /* Path.swift */; };
 		01AEEE2A27DFB9E8008B900C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2927DFB9E8008B900C /* AppDelegate.swift */; };
 		01AEEE2C27DFB9E8008B900C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2B27DFB9E8008B900C /* SceneDelegate.swift */; };
 		01AEEE2E27DFB9E8008B900C /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2D27DFB9E8008B900C /* LaunchScreenViewController.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		012AFADA27E26FF5000B5434 /* PathFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFinder.swift; sourceTree = "<group>"; };
+		012AFADC27E27049000B5434 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		01AEEE2627DFB9E8008B900C /* ChessKnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessKnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AEEE2927DFB9E8008B900C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01AEEE2B27DFB9E8008B900C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 			children = (
 				01AEEE7C27DFE7DB008B900C /* CellIdentifiers.swift */,
 				01AEEE6E27DFE3F3008B900C /* TableViewDatasource.swift */,
+				012AFADA27E26FF5000B5434 /* PathFinder.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				01B0F31C27E10BEA005212B0 /* ChessboardPosition.swift */,
+				012AFADC27E27049000B5434 /* Path.swift */,
 			);
 			path = DomainModels;
 			sourceTree = "<group>";
@@ -465,11 +471,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				01AEEE6127DFDF86008B900C /* SuperTableViewController.swift in Sources */,
+				012AFADD27E27049000B5434 /* Path.swift in Sources */,
 				01AEEE2E27DFB9E8008B900C /* LaunchScreenViewController.swift in Sources */,
 				01B0F32627E11514005212B0 /* SuperCollectionViewCell.swift in Sources */,
 				01AEEE6F27DFE3F3008B900C /* TableViewDatasource.swift in Sources */,
 				01B0F32427E11433005212B0 /* ChessboardCollectionViewCellViewModel.swift in Sources */,
 				01AEEE2A27DFB9E8008B900C /* AppDelegate.swift in Sources */,
+				012AFADB27E26FF5000B5434 /* PathFinder.swift in Sources */,
 				01B0F31F27E1116E005212B0 /* ChessboardCollectionViewDatasource.swift in Sources */,
 				01B0F32A27E1153F005212B0 /* ChessboardCollectionViewCell.swift in Sources */,
 				01B0F32127E113E2005212B0 /* SuperCollectionViewCellViewModel.swift in Sources */,

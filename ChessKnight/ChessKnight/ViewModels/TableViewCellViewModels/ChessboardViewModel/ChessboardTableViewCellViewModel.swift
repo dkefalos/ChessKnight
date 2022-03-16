@@ -11,11 +11,15 @@ class ChessboardDependencies {
     var size: Int
     var startPosition: ChessboardPosition?
     var endPosition: ChessboardPosition?
+    var paths: [Path] = []
     
-    init(size: Int, startPosition: ChessboardPosition? = nil, endPosition: ChessboardPosition? = nil) {
+    init(size: Int, startPosition: ChessboardPosition? = nil, endPosition: ChessboardPosition? = nil, paths: [Path]? = nil) {
         self.size = size
         self.startPosition = startPosition
         self.endPosition = endPosition
+        if let thePaths = paths {
+            self.paths = thePaths
+        }
     }
 }
 
