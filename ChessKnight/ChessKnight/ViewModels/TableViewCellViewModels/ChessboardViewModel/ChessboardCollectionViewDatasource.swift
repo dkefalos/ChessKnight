@@ -36,7 +36,18 @@ class ChessboardCollectionViewDatasource: NSObject,
                         isStartPosition = true
                     }
                 }
-                let newCell = ChessboardCollectionViewCellViewModel.init(position: position, isStartPosition: isStartPosition)
+                
+                var isEndPosition = false
+                if let endPos = chessboardDeps.endPosition {
+                    if endPos == position {
+                        isEndPosition = true
+                    }
+                }
+                
+                let newCell = ChessboardCollectionViewCellViewModel.init(position: position,
+                                                                         isStartPosition: isStartPosition,
+                                                                         isEndPosition: isEndPosition,
+                                                                         isPath: false)
                 self.cells.append(newCell)
             }
         }

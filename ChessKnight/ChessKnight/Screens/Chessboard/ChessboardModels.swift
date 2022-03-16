@@ -20,8 +20,11 @@ enum ChessboardModels {
         }
         
         func updateWithStartPosition(_ position: ChessboardPosition) {
-            self.chessboardDependencies = ChessboardDependencies.init(size: self.boardSize,
-                                                                      startPosition: position)
+            self.chessboardDependencies.startPosition = position
+        }
+        
+        func updateWithEndPosition(_ position: ChessboardPosition) {
+            self.chessboardDependencies.endPosition = position
         }
     }
     

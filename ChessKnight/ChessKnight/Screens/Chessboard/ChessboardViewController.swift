@@ -15,6 +15,7 @@ class ChessboardViewController: SuperTableViewController, ChessboardCellSelected
     
     var dataModel: ChessboardModels.DataModel?
     var tableViewModel: ChessboardModels.ViewModel?
+    var startPositionSelected: Bool = false
     
     init(dataModel: ChessboardModels.DataModel) {
         super.init(nibName: "ChessboardViewController", bundle: nil)
@@ -37,7 +38,16 @@ class ChessboardViewController: SuperTableViewController, ChessboardCellSelected
     
     func selectedCellAt(_ position: ChessboardPosition) {
         debugPrint("Selected Cell at Position x: \(position.x), y: \(position.y)")
-        self.dataModel?.updateWithStartPosition(position)
-        self.presentData()
+
+        switch self.startPositionSelected {
+        case false:
+            self.dataModel?.updateWithStartPosition(position)
+            self.presentData()
+            self.startPositionSelected = true
+        default:
+            self.dataModel?.updateWithEndPosition(position)
+            self.presentData()
+            self.startPositionSelected = false
+        }
     }
 }
