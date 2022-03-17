@@ -7,7 +7,8 @@
 
 import UIKit
 
-class Path {
+class Path: NSCopying {
+    
     var positions: [ChessboardPosition] = []
     
     func containsPosition(_ position: ChessboardPosition) -> Bool {
@@ -18,5 +19,21 @@ class Path {
         }
         
         return false
+    }
+    
+    func appendPosition(_ position: ChessboardPosition) {
+        self.positions.append(position)
+    }
+    
+    func getLastPosition() -> ChessboardPosition? {
+        return self.positions.last
+    }
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        let newPath = Path.init()
+        for thisPosition in self.positions {
+            newPath.appendPosition(thisPosition)
+        }
+        return newPath
     }
 }

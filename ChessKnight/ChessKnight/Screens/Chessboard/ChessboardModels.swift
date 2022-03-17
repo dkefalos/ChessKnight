@@ -25,7 +25,8 @@ enum ChessboardModels {
         
         func updateWithEndPosition(_ position: ChessboardPosition) {
             self.chessboardDependencies.endPosition = position
-            self.chessboardDependencies.paths = PathFinder.findPathsFor(chessboardDeps: self.chessboardDependencies)
+            let pathfinder = PathFinder.init(chessboardDeps: self.chessboardDependencies)
+            self.chessboardDependencies.paths = pathfinder.returnPaths() // .findPathsFor(chessboardDeps: self.chessboardDependencies)
         }
         
         func doesNotContainStartPosition() -> Bool {
