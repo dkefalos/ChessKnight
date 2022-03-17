@@ -12,6 +12,7 @@
 		012AFAE027E285AD000B5434 /* ResetButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AFADF27E285AD000B5434 /* ResetButtonViewModel.swift */; };
 		012AFAE427E28619000B5434 /* CellWithButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012AFAE227E28619000B5434 /* CellWithButtonTableViewCell.swift */; };
 		012AFAE527E28619000B5434 /* CellWithButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012AFAE327E28619000B5434 /* CellWithButtonTableViewCell.xib */; };
+		012F01B727E3D83500810AE1 /* PathNotationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F01B627E3D83500810AE1 /* PathNotationCellViewModel.swift */; };
 		01AEEE2A27DFB9E8008B900C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2927DFB9E8008B900C /* AppDelegate.swift */; };
 		01AEEE2C27DFB9E8008B900C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2B27DFB9E8008B900C /* SceneDelegate.swift */; };
 		01AEEE2E27DFB9E8008B900C /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEEE2D27DFB9E8008B900C /* LaunchScreenViewController.swift */; };
@@ -67,6 +68,7 @@
 		012AFADF27E285AD000B5434 /* ResetButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetButtonViewModel.swift; sourceTree = "<group>"; };
 		012AFAE227E28619000B5434 /* CellWithButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithButtonTableViewCell.swift; sourceTree = "<group>"; };
 		012AFAE327E28619000B5434 /* CellWithButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellWithButtonTableViewCell.xib; sourceTree = "<group>"; };
+		012F01B627E3D83500810AE1 /* PathNotationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathNotationCellViewModel.swift; sourceTree = "<group>"; };
 		01AEEE2627DFB9E8008B900C /* ChessKnight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessKnight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AEEE2927DFB9E8008B900C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01AEEE2B27DFB9E8008B900C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 				012AFAE327E28619000B5434 /* CellWithButtonTableViewCell.xib */,
 			);
 			path = CellWithButton;
+			sourceTree = "<group>";
+		};
+		012F01B527E3D6A100810AE1 /* PathNotationCellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				012F01B627E3D83500810AE1 /* PathNotationCellViewModel.swift */,
+			);
+			path = PathNotationCellViewModel;
 			sourceTree = "<group>";
 		};
 		01AEEE1D27DFB9E8008B900C = {
@@ -292,6 +302,7 @@
 		01AEEE6C27DFE36D008B900C /* TableViewCellViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				012F01B527E3D6A100810AE1 /* PathNotationCellViewModel */,
 				01AEEE7027DFE43B008B900C /* SuperTableViewCellViewModel.swift */,
 				01AEEE7927DFE779008B900C /* SingleLabelViewModel */,
 				01AEEE6B27DFE348008B900C /* ChessboardViewModel */,
@@ -507,6 +518,7 @@
 				012AFADB27E26FF5000B5434 /* PathFinder.swift in Sources */,
 				01B0F31F27E1116E005212B0 /* ChessboardCollectionViewDatasource.swift in Sources */,
 				01B0F32A27E1153F005212B0 /* ChessboardCollectionViewCell.swift in Sources */,
+				012F01B727E3D83500810AE1 /* PathNotationCellViewModel.swift in Sources */,
 				01B0F32127E113E2005212B0 /* SuperCollectionViewCellViewModel.swift in Sources */,
 				01B0F31927E10959005212B0 /* ChessboardTableViewCell.swift in Sources */,
 				012AFAE427E28619000B5434 /* CellWithButtonTableViewCell.swift in Sources */,

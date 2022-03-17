@@ -26,7 +26,7 @@ enum ChessboardModels {
         func updateWithEndPosition(_ position: ChessboardPosition) {
             self.chessboardDependencies.endPosition = position
             let pathfinder = PathFinder.init(chessboardDeps: self.chessboardDependencies)
-            self.chessboardDependencies.paths = pathfinder.returnPaths() // .findPathsFor(chessboardDeps: self.chessboardDependencies)
+            self.chessboardDependencies.paths = pathfinder.returnPaths()
         }
         
         func doesNotContainStartPosition() -> Bool {
@@ -66,6 +66,8 @@ enum ChessboardModels {
 
             self.constructLabelCell()
             self.constructChessboardCell(dataModel: dataModel, chessboardDelegate: chessboardDelegate)
+            self.constructResultsChessNotationCells(dataModel: dataModel)
+            
             if let theDataModel = dataModel, theDataModel.shouldShowResetButton() {
                 self.contructResetCell(dataModel: dataModel, resetDelegate: cellButtonDelegate)
             }
@@ -81,6 +83,15 @@ enum ChessboardModels {
                 let chessboardCell = ChessboardTableViewCellViewModel.init(chessboardDeps: boardDeps,
                                                                            delegate: chessboardDelegate)
                 self.cells.append(chessboardCell)
+            }
+        }
+        
+        func constructResultsChessNotationCells(dataModel: DataModel?) {
+            if let thePaths = dataModel?.chessboardDependencies.paths {
+                for thisPath in thePaths {
+                    let theVM = PathNotationCellViewModel.init(path: thisPath)
+                    self.cells.append(theVM)
+                }
             }
         }
         

@@ -36,4 +36,16 @@ class Path: NSCopying {
         }
         return newPath
     }
+    
+    func getPathChessNotation() -> String? {
+        var notationString = ""
+        
+        var i = 0
+        for thisPosition in self.positions {
+            notationString.append("\(i + 1). \(thisPosition.getChessNotation()) ")
+            i += 1
+        }
+        
+        return notationString
+    }
 }
