@@ -54,6 +54,11 @@ class ChessboardViewController: SuperTableViewController, ChessboardCellSelected
         else if theDataModel.doesNotContainEndPosition() {
             self.dataModel?.updateWithEndPosition(position)
             self.presentData()
+            if theDataModel.hasNoValidResultPaths() {
+                AlertsHelper.createAlert(title: "ChessKnight",
+                                         message: "There are no available results for the positions you entered",
+                                         viewController: self)
+            }
         }
     }
     

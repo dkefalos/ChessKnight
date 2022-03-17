@@ -46,6 +46,10 @@ enum ChessboardModels {
             self.chessboardDependencies.endPosition = nil
             self.chessboardDependencies.paths = []
         }
+        
+        func hasNoValidResultPaths() -> Bool {
+            return self.chessboardDependencies.paths.count == 0
+        }
     }
     
     class ViewModel: TableViewDatasource {
