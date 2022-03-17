@@ -34,6 +34,10 @@ class ChessboardViewController: SuperTableViewController, ChessboardCellSelected
         self.presentData()
     }
     
+    override func customizeView() {
+        self.navigationItem.title = "ChessboardViewController"
+    }
+    
     func presentData() {
         self.tableViewModel = ChessboardModels.ViewModel.init(dataModel: self.dataModel,
                                                               chessboardDelegate: self,
